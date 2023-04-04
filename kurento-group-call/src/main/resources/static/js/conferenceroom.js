@@ -15,7 +15,7 @@
  *
  */
 
-var ws = new WebSocket('wss://https://54.180.2.219:8443/groupcall');
+var ws = new WebSocket('wss://54.180.2.219:8443/groupcall');
 var participants = {};
 var name;
 
