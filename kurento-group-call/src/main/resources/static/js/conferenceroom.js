@@ -53,6 +53,8 @@ ws.onmessage = function(message) {
 	}
 }
 
+window.myRegister = () => { register(); }
+
 function register() {
 	name = document.getElementById('name').value;
 	var room = document.getElementById('roomName').value;
@@ -122,6 +124,7 @@ function onExistingParticipants(msg) {
 	msg.data.forEach(receiveVideo);
 }
 
+window.myLeaveRoom = () => { leaveRoom(); }
 function leaveRoom() {
 	sendMessage({
 		id : 'leaveRoom'
